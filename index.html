@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cronometro</title>
+</head>
+<style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+*{
+	margin: 0 auto;
+	padding: 0;
+
+}
+body{
+	background-color: #111;
+	padding: 110px;
+
+}
+
+.max-width{
+	max-width: 500px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 10%;
+	background-color: #fff;
+	box-shadow: 0 0 5px #fff;
+	text-align: center;
+
+}
+h1{
+	font-family: "Curier Prime",  monospace;
+	margin-top: 15px;
+}
+button{
+	padding: 10px;
+	border:none;
+	font-family: 'Open Sans';
+	font-size: 1.1rem;
+	transition: all 5s;
+	cursor: pointer;
+	outline: none;
+	text-transform: uppercase;
+	color: white;
+	
+	
+}
+/*button:hover{
+	background-color:#208C0B ;
+	transition: 1s;
+}*/
+button:active {
+    position: relative;
+    top: 5px;
+	box-shadow: none;
+    transition: 1s; 
+}
+/* BACKGROUND GREEN */
+.bg-green{
+	background-color:green;
+	transition: 1s;
+	box-shadow: 0 5px 0 #006000;
+
+}
+.bg-green:hover{
+	background-color:#006000;
+	transition: 1s;
+	box-shadow: 0 5px 0 #003f00;
+}
+
+/*BACKGROUND BLUE */
+.bg-blue{
+	background-color:blue;
+	transition: 1s;
+	box-shadow: 0 5px 0 #0A0C60;
+}
+.bg-blue:hover{
+	background-color:#0F0C7C;
+	transition: 1s;
+	box-shadow: 0 5px 0 #0A0C60;
+}
+
+/* BACKGROUND RED */
+.bg-red{
+	background-color:red;
+	transition: 1s;
+	box-shadow: 0 5px 0 #7B0B0B;
+}
+.bg-red:hover{
+	background-color:#9A0B0B;
+	transition: 1s;
+	box-shadow: 0 5px 0 #7B0B0B;
+}
+
+
+</style>
+
+<body>
+	
+
+     <div class="max-width">
+     	<button onclick="start();"class="bg-red">Iniciar</button>
+     	<button onclick="pause();"class="bg-green">Pausar</button>
+     	<button onclick="stop();"class="bg-blue">Parar</button>
+     	<h1 id="counter">00:00:00</h1>
+     </div>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+
+
+
+</body>
+</html>
